@@ -24,8 +24,6 @@ body {
 }
 
 .header-menu {
-  margin-bottom: 46px;
-
   background-color: #293449;
 }
 
@@ -104,4 +102,82 @@ body {
 
 .shop-link-list .order-btn {
   background-color: #63a63e;
+}
+
+.header-wrapper {
+  padding-top: 46px;
+  padding-bottom: 60px;
+
+  background-color: #f1f5f7;
+}
+
+.preview-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-section > * {
+  width: 300px;
+  margin: 0;
+}
+
+.preview-section .introduction {
+  padding: 5px 50px 0;
+
+  color: #ee3643;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.contacts a {
+  display: inline-block;
+  width: 270px;
+  height: 45px;
+  margin-bottom: 6px;
+  padding: 10px 50px 10px 70px;
+  border: 3px solid #FFFFFF;
+
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.contacts address {
+  width: 270px;
+
+  color: #32425c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.user-section {
+  display: flex;
+}
+
+.user-section a {
+  width: 120px;
+  height: 45px;
+  margin-left: 20px;
+  padding: 13px 25px;
+
+  color: #000;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  text-decoration: none;
+
+  background-color: #fff;
+}
+
+.user-section .login {
+  padding-left: 50px;
+}
+
+.user-section .registration {
+  width: 150px;
+  margin-left: 10px;
 }
