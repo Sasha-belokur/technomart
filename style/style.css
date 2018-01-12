@@ -280,8 +280,6 @@ body {
   justify-content: space-between;
   height: 410px;
   margin-top: 80px;
-
-  background-color: green;
 }
 
 .first-column {
@@ -300,13 +298,21 @@ body {
 }
 
 .offer-item {
+  position: relative;
+
   width: 300px;
   height: 125px;
   padding: 25px;
+
+  overflow: hidden;
+  background-image: url('../img/sprite-icon.png');
+  background-repeat: no-repeat;
+  background-position: 146px -14px;
 }
 
 .offer-item.materials {
   background-color: #F6B22D;
+  background-position-y: -497px
 }
 
 .offer-item.tools {
@@ -315,18 +321,75 @@ body {
 
 .offer-item.machinery {
   background-color: #CC79D1;
+  background-position-y: -175px
 }
 
 .offer-item.discount {
   background-color: #85D179;
+  background-position-y: -658px
 }
 
 .offer-item.delivery {
   background-color: #F6B22D;
+  background-position-y: -336px
+}
+
+.offer-item .ribbon {
+  position: absolute;
+  top: 6px;
+  right: -44px;
+  
+  width: 130px;
+  height: 28px;
+  padding: 5px 0;
+
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'PT Sans Narrow', sans-serif;
+  line-height: 18px;
+  text-align: center;
+
+  background-color: #EE3643;
+
+  transform: rotate(45deg);
 }
 
 .offer-item p {
+  width: 150px;
   margin: 0;
+
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.offer-item a {
+  display: inline-block;
+  width: 135px;
+  height: 38px;
+  margin-top: 13px;
+  padding: 10px 0;
+
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.offer-item a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.offer-item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider {
@@ -334,13 +397,13 @@ body {
   width: 620px;
   height: 265px;
   
+  background-image: url('../img/first-slide.jpg');
   background-color: #958D82;
 }
 
 .slider-header {
   height: 105px;
   padding: 25px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slider-title {
@@ -393,8 +456,8 @@ body {
   position: absolute;
   left: 25px;
 
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   border-top: 4px solid #FFFFFF;
   border-left: 4px solid #FFFFFF;
 
