@@ -70,12 +70,23 @@ body {
   line-height: 18px;
 
   background-color: transparent;
+  transition: all 0.3s;
 }
 
 .search-field::-webkit-input-placeholder {
   color: #FFFFFF;
 }
 
+.search-field:hover {
+  background-color: #212A3A;
+}
+
+.search-field:focus {
+  color: #000000;
+  outline: none;
+  background-color: #FFFFFF;
+}
+  
 .shop-link-list {
   display: flex;
   width: 450px;
@@ -88,6 +99,8 @@ body {
   flex: 1;
 
   text-align: center;
+
+  transition: all 0.3s;
 }
 
 .shop-link-list a {
@@ -100,8 +113,28 @@ body {
   color: #fff;
 }
 
+.shop-link-list li:not(.order-btn):hover {
+  background-color: #212A3A;
+}
+
+.shop-link-list li:not(.order-btn):active {
+  background-color: #161D29;
+}
+
+.shop-link-list li:not(.order-btn) a:active {
+  opacity: 0.6;
+}
+
 .shop-link-list .order-btn {
-  background-color: #63a63e;
+  background-color: #63A63E;
+}
+
+.shop-link-list .order-btn:hover {
+  background-color: #5FBB2D
+}
+
+.shop-link-list .order-btn:active {
+  opacity: 0.5;
 }
 
 .header-wrapper {
@@ -122,6 +155,7 @@ body {
 }
 
 .preview-section .introduction {
+  margin-bottom: 45px;
   padding: 5px 50px 0;
 
   color: #ee3643;
@@ -171,6 +205,16 @@ body {
   text-decoration: none;
 
   background-color: #fff;
+
+  transition: all 0.3s;
+}
+
+.user-section a:hover {
+  color: #FF3333;
+}
+
+.user-section a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .user-section .login {
@@ -180,4 +224,53 @@ body {
 .user-section .registration {
   width: 150px;
   margin-left: 10px;
+}
+
+.main-navigation ul {
+  position: relative;
+  display: flex;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #32425C;
+
+  list-style: none;
+}
+
+.main-navigation li {
+  flex-grow: 1;
+
+  border-bottom: 5px solid #293449;
+
+  transition: all 0.3s;
+}
+
+.main-navigation a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.5s;
+}
+
+.main-navigation li:hover {
+  background-color: #293449;
+}
+
+.main-navigation li:active {
+  background-color: #1D2739;
+  border-bottom-color: #1D2739;
+}
+
+.main-navigation a:active {
+  opacity: 0.5;
 }
