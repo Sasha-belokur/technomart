@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style/normalize.css">
   <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
@@ -48,11 +48,10 @@
       </div>
     </div>
   </header>
-  <main class="container">
-    <section class="offers">
+  <main>
+    <section class="offers container">
       <div class="first-column">
-        <div class="offer-item materials">
-          <div class="ribbon">new</div>
+        <div class="offer-item materials has-ribbon">
           <p>Материалы <a href="#">на любой вкус</a></p>
         </div>
         <div class="offer-item tools">
@@ -66,8 +65,8 @@
               <p>Настоящие мужские игрушки</p>
             </header>
             <a class="btn" href="#">Открыть каталог</a>
-            <button class="slider-btn prev" title="Предыдущий">Предыдущий</button>
-            <button class="slider-btn next" title="Следующий">Следующий</button>
+            <button class="slider-png-btn prev" title="Предыдущий">Предыдущий</button>
+            <button class="slider-png-btn next" title="Следующий">Следующий</button>
           </section>
         </div>
       </div>
@@ -86,52 +85,56 @@
         </div>
       </div>
     </section>
-    <section class="popular-items">
+    <section class="popular-items container">
       <header class="section-title">
         <h2>Популярные товары:</h2>
-        <a href="#">Все популярные товары</a>
+        <a class="btn" href="#">Все популярные товары</a>
       </header>
-      <div class="popular-item">
-        <img src="" alt="">
-        <p>Перфоратор Бош</p>
-        <p class="old-price">32500 р.</p>
-        <a class="price" href="#">25500 р.</a>
-      </div>
-      <div class="popular-item">
-        <img src="" alt="">
-        <p>Перфоратор Бош</p>
-        <p class="old-price">32500 р.</p>
-        <a class="price" href="#">25500 р.</a>
-      </div>
-      <div class="popular-item">
-        <img src="" alt="">
-        <p>Перфоратор Бош</p>
-        <p class="old-price">32500 р.</p>
-        <a class="price" href="#">25500 р.</a>
-      </div>
-      <div class="popular-item">
-        <img src="" alt="">
-        <p>Перфоратор Бош</p>
-        <p class="old-price">32500 р.</p>
-        <a class="price" href="#">25500 р.</a>
+      <div class="popular-items-wrapper">
+        <artile class="popular-item">
+          <img width="190" height="110" src="img\item-img.png" alt="">
+          <b class="title">Перфоратор BOSCH <br> BFG 9000</b>
+          <p class="old-price">32500 р.</p>
+          <a class="btn price" href="#">25500 р.</a>
+        </artile>
+        <artile class="popular-item">
+          <img width="190" height="110" src="img\item-img.png" alt="">
+          <b class="title">Перфоратор BOSCH <br> BFG 9000</b>
+          <p class="old-price">32500 р.</p>
+          <a class="btn price" href="#">25500 р.</a>
+        </artile>
+        <artile class="popular-item">
+          <img width="190" height="110" src="img\item-img.png" alt="">
+          <b class="title">Перфоратор BOSCH <br> BFG 9000</b>
+          <p class="old-price">32500 р.</p>
+          <a class="btn price" href="#">25500 р.</a>
+        </artile>
+        <artile class="popular-item has-ribbon">
+          <img width="190" height="110" src="img\item-img.png" alt="">
+          <b class="title">Перфоратор BOSCH <br> BFG 9000</b>
+          <p class="old-price">32500 р.</p>
+          <a class="btn price" href="#">25500 р.</a>
+        </artile>
       </div>
     </section>
-    <section class="popular-producers">
+    <section class="popular-producers container">
       <header class="section-title">
         <h2>Популярные производители:</h2>
-        <a href="#">Все производители</a>
+        <a class="btn" href="#">Все производители</a>
       </header>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
-      <div class="popular-producer"><img src="" alt=""></div>
+      <div class="popular-producers-wrapper">
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+        <div class="popular-producer"><img src="" alt=""></div>
+      </div>
     </section>
     <section class="feateures">
-      <div class="feature-item">
+      <div class="feature-item container">
         <input type="radio" class="feature1" name="feature" value="delivery" id="delivery">
         <input type="radio" class="feature2" name="feature" value="varanty" id="varanty">
         <input type="radio" class="feature3" name="feature" value="credit" id="credit">
@@ -146,7 +149,7 @@
         <p class="feature-description"></p>
       </div>
     </section>
-    <article class="about-company">
+    <article class="about-company container">
       <section class="company-preview">
         <h2>Компания "Техномарт"</h2>
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
