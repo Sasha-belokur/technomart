@@ -529,6 +529,7 @@ body {
 .popular-item .title {
   color: #000000;
   font-size: 18px;
+  font-family: 'PTSans', "Arial", sans-serif; 
   font-weight: 700;
   line-height: 20px;
 }
@@ -547,6 +548,7 @@ body {
   display: flex;
   height: 310px;
   margin-top: 20px;
+  margin-bottom: 85px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
@@ -556,4 +558,15 @@ body {
   width: 220px;
   height: 145px;
   border: 1px solid #E9E9E9;
+}
+
+.services {
+  padding-top: 65px;
+  padding-bottom: 105px;
+
+  background-color: #F2F6F8;
+}
+
+.services input[type="radio"] {
+  display: none;
 }
